@@ -91,9 +91,10 @@ rb.velocity = new Vector2(move * speed, rb.velocity.y);
 if (isGrounded && Input.GetButtonDown("Jump"))
 {
     rb.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
-}```
+}
+```
 
-
+```md
 <br><br>
 Physics & Collisions
 
