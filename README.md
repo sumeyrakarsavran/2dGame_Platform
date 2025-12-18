@@ -94,7 +94,6 @@ if (isGrounded && Input.GetButtonDown("Jump"))
 }
 ```
 
-```md
 <br><br>
 Physics & Collisions
 
