@@ -1,4 +1,4 @@
-2D Game Platform
+# 2D Game Platform
 
 Unity 2D platformer template built in C#.
 A simple side-scroll platform game demonstrating core mechanics such as player movement, jumping, collisions, and level setup.
@@ -25,12 +25,12 @@ A simple side-scroll platform game demonstrating core mechanics such as player m
 🚀 Improvements & Future Work
 <br><br>
 
-🧩 About
+🧩 **About**
 
 This project is a 2D platformer game made with Unity (C#). It serves as both a playable prototype and a learning example for Unity 2D mechanics such as physics, animation, input handling, and scene management.
 
 <br><br>
-🚀 Features
+🚀 **Features**
 
 ✔ Player movement (left/right)
 
@@ -44,7 +44,7 @@ This project is a 2D platformer game made with Unity (C#). It serves as both a p
 
 
 <br><br>
-🛠️ Built With
+🛠️ **Built With**
 
 Technology	Purpose
 
@@ -56,7 +56,7 @@ Unity Physics2D	Collisions & movement
 
 
 <br><br>
-🎮 Gameplay Overview
+🎮 **Gameplay Overview**
 
 This project demonstrates fundamental 2D platformer gameplay:
 
@@ -69,7 +69,7 @@ Ground & wall collision: prevents clipping through platforms
 Scene design: basic tutorial level ready for expansion
 
 <br><br>
-🧠 How It Works
+🧠 **How It Works**
 
 Player Movement
 
@@ -82,7 +82,7 @@ Jumping when grounded
 Animation state changes based on input and velocity
 
 <br><br>
-Typical movement logic:
+**Typical movement logic:**
 
 ```csharp
 float move = Input.GetAxis("Horizontal");
@@ -95,7 +95,7 @@ if (isGrounded && Input.GetButtonDown("Jump"))
 ```
 
 <br><br>
-Physics & Collisions
+*Physics & Collisions*
 
 BoxCollider2D and CircleCollider2D components detect collisions
 
@@ -103,7 +103,7 @@ LayerMask filters ground layers for proper ground detection
 
 
 <br><br>
-🏗️ How to Run Locally
+🏗️ **How to Run Locally**
 
 Install Unity (recommended version specified in ProjectSettings/ProjectVersion.txt)
 
@@ -118,7 +118,7 @@ Open the main scene located in Assets/Scenes/
 Press Play in the Unity Editor
 
 <br><br>
-📌 Controls
+📌 **Controls**
 
 Action	Key
 
@@ -132,7 +132,7 @@ Quit	Esc (if implemented)
 
 <br><br>
 
-🚀 Improvements & Future Work
+🚀 **Improvements & Future Work**
 
 Planned enhancements:
 
