@@ -14,8 +14,6 @@ A simple side-scroll platform game demonstrating core mechanics such as player m
 
 🛠️ Built With
 
-📁 Project Structure
-
 🎮 Gameplay Overview
 
 🧠 How It Works
@@ -25,37 +23,39 @@ A simple side-scroll platform game demonstrating core mechanics such as player m
 📌 Controls
 
 🚀 Improvements & Future Work
+<br><br>
 
 🧩 About
 
 This project is a 2D platformer game made with Unity (C#). It serves as both a playable prototype and a learning example for Unity 2D mechanics such as physics, animation, input handling, and scene management.
 
+<br><br>
 🚀 Features
 
 ✔ Player movement (left/right)
+
 ✔ Jumping with physics
+
 ✔ Ground detection
+
 ✔ Platforms and collision
+
 ✔ Scene setup ready for expansion
 
+
+<br><br>
 🛠️ Built With
+
 Technology	Purpose
+
 Unity	Game engine
+
 C#	Programming
+
 Unity Physics2D	Collisions & movement
 
 
-📁 Project Structure
-2dGame_Platform/
-├── Assets/                # Game assets (scenes, sprites, scripts)
-│   ├── Scenes/            # Unity scenes
-│   ├── Sprites/           # Art files (player, platforms)
-│   ├── Scripts/           # C# gameplay scripts
-│   └── Animations/        # Animation files
-├── ProjectSettings/       # Unity project configuration
-├── .gitignore
-├── README.md
-
+<br><br>
 🎮 Gameplay Overview
 
 This project demonstrates fundamental 2D platformer gameplay:
@@ -68,7 +68,9 @@ Ground & wall collision: prevents clipping through platforms
 
 Scene design: basic tutorial level ready for expansion
 
+<br><br>
 🧠 How It Works
+
 Player Movement
 
 The PlayerController.cs script handles:
@@ -79,21 +81,28 @@ Jumping when grounded
 
 Animation state changes based on input and velocity
 
+<br><br>
 Typical movement logic:
 
+```csharp
 float move = Input.GetAxis("Horizontal");
 rb.velocity = new Vector2(move * speed, rb.velocity.y);
 
-if (isGrounded && Input.GetButtonDown("Jump")) {
+if (isGrounded && Input.GetButtonDown("Jump"))
+{
     rb.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
 }
 
+
+<br><br>
 Physics & Collisions
 
 BoxCollider2D and CircleCollider2D components detect collisions
 
 LayerMask filters ground layers for proper ground detection
 
+
+<br><br>
 🏗️ How to Run Locally
 
 Install Unity (recommended version specified in ProjectSettings/ProjectVersion.txt)
@@ -102,20 +111,26 @@ Clone the repository
 
 git clone https://github.com/sumeyrakarsavran/2dGame_Platform.git
 
-
 Open the project with Unity Hub
 
 Open the main scene located in Assets/Scenes/
 
 Press Play in the Unity Editor
 
+<br><br>
 📌 Controls
+
 Action	Key
+
 Move Left	A / Left Arrow
+
 Move Right	D / Right Arrow
+
 Jump	Space
+
 Quit	Esc (if implemented)
 
+<br><br>
 
 🚀 Improvements & Future Work
 
